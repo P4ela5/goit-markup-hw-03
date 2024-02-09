@@ -34,13 +34,16 @@ ul {
 img {
   display: block;
 }
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
 
 .page-header .container {
   display: flex;
   justify-content: space-between;
   width: 1128px;
   margin: 0 auto;
-  border-bottom: 1px solid #e7e9fc;
+
   width: 1158px;
   padding: 0 15px;
 }
@@ -110,6 +113,10 @@ ul {
   color: #404bbf;
 }
 
+.hero-section {
+  padding: 188px 0;
+}
+
 .hero-section .container {
   background: #2e2f42;
   height: 600px;
@@ -154,13 +161,16 @@ ul {
   background-color: #404bbf;
 }
 
+.skill {
+  padding: 120px 0;
+}
+
 .skill .container {
   width: 1128px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  padding: 120px 0;
   gap: 72px;
 }
 
