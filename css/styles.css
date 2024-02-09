@@ -352,6 +352,10 @@ ul {
 
 .footer-section {
   background: #2e2f42;
+  padding: 100px 0;
+  width: 1440px;
+}
+.footer-section. .container {
 }
 
 .footer-logo {
@@ -362,6 +366,8 @@ ul {
   font-size: 18px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-logo-accent {
