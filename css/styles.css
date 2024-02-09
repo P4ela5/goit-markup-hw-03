@@ -33,8 +33,6 @@ ul {
 
 img {
   display: block;
-  max-width: 100%;
-  object-fit: 100%;
 }
 
 .page-header .container {
@@ -42,12 +40,15 @@ img {
   justify-content: space-between;
   width: 1128px;
   margin: 0 auto;
-  padding: 24px 0;
+  border-bottom: 1px solid #e7e9fc;
+  width: 1158px;
+  padding: 0 15px;
 }
 
 .page-nav {
   display: flex;
   gap: 76px;
+  align-items: center;
 }
 
 .logo {
@@ -59,6 +60,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   display: flex;
+  margin-right: 76px;
 }
 
 .logo-accent {
@@ -78,6 +80,7 @@ ul {
   font-weight: 500;
   display: inline-flex;
   gap: 40;
+  padding: 24px 0;
 }
 
 .header-link:hover {
@@ -115,6 +118,7 @@ ul {
   align-items: center;
   flex-direction: column;
   gap: 48px;
+  padding: 188px 0;
 }
 
 .hero-title {
@@ -123,6 +127,7 @@ ul {
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
+  max-width: 496px;
 }
 
 .hero-button {
@@ -135,9 +140,9 @@ ul {
   background-color: #4d5ae5;
   cursor: pointer;
   border-radius: 4px;
-
-  width: 169px;
+  min-width: 169px;
   height: 56px;
+  border: none;
 }
 
 .hero-button:hover {
@@ -159,6 +164,11 @@ ul {
   gap: 72px;
 }
 
+.skill-li {
+  display: flex;
+  width: calc((100% - 72px) / 4);
+}
+
 .skill-title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -168,7 +178,9 @@ ul {
   text-transform: capitalize;
   text-align: center;
   color: #2e2f42;
+  display: none;
 }
+
 .skill-list {
   display: flex;
   gap: 24px;
@@ -206,6 +218,14 @@ ul {
 
 .team-item {
   background-color: #ffffff;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0 0 4px 4px;
+}
+
+.tomford-frontdevelop .markguerrero-productdesigner,
+.kamilagar-market,
+.danielwil-desing {
+  padding: 32px 0;
 }
 
 .team-img {
@@ -220,6 +240,7 @@ ul {
   line-height: 1.2;
   text-align: center;
   text-transform: capitalize;
+  margin-bottom: 8px;
 }
 
 .ot-text {
@@ -229,6 +250,7 @@ ul {
   letter-spacing: 0.02em;
   text-align: center;
 }
+
 .our-team-title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -238,6 +260,7 @@ ul {
   text-transform: capitalize;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 
 .portfolio-section .container {
