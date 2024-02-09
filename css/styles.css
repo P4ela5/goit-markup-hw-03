@@ -34,6 +34,7 @@ ul {
 img {
   display: block;
 }
+
 .page-header {
   border-bottom: 1px solid #e7e9fc;
 }
@@ -97,6 +98,7 @@ ul {
 .contacts {
   font-style: normal;
   display: flex;
+  align-items: center;
 }
 
 .header-address {
@@ -177,6 +179,7 @@ ul {
 .skill-li {
   display: flex;
   width: calc((100% - 72px) / 4);
+  flex-direction: column;
 }
 
 .skill-title {
@@ -211,12 +214,16 @@ ul {
   font-weight: 400;
 }
 
+.team-section {
+  padding: 120px 0;
+  background-color: #f4f4fd;
+}
+
 .team-section .container {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding: 120px 0;
-  background-color: #f4f4fd;
+
   gap: 72px;
 }
 .team-list {
@@ -232,14 +239,13 @@ ul {
   border-radius: 0 0 4px 4px;
 }
 
-.tomford-frontdevelop .markguerrero-productdesigner,
-.kamilagar-market,
-.danielwil-desing {
+.team-block {
   padding: 32px 0;
 }
 
 .team-img {
   background-color: #ffffff;
+  margin: 0 auto;
 }
 
 .ot-header {
