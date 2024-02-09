@@ -12,6 +12,9 @@ body {
   box-sizing: border-box;
 }
 
+a:link {
+  text-decoration: none;
+}
 h1,
 h2,
 h3 {
@@ -30,6 +33,21 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
+  object-fit: 100%;
+}
+
+.page-header .container {
+  display: flex;
+  justify-content: space-between;
+  width: 1128px;
+  margin: 0 auto;
+  padding: 24px 0;
+}
+
+.page-nav {
+  display: flex;
+  gap: 76px;
 }
 
 .logo {
@@ -40,7 +58,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding: 24px 76px 156px;
+  display: flex;
 }
 
 .logo-accent {
@@ -49,13 +67,17 @@ img {
 
 ul {
   list-style-type: none;
-  padding: 24px 332px 76px;
+}
+.header-list {
+  display: flex;
+  gap: 40px;
 }
 .header-link {
   color: #2e2f42;
   letter-spacing: 0.02em;
   font-weight: 500;
-  padding-right: 40px;
+  display: inline-flex;
+  gap: 40;
 }
 
 .header-link:hover {
@@ -68,8 +90,13 @@ ul {
 
 .contacts {
   font-style: normal;
+  display: flex;
 }
 
+.header-address {
+  display: flex;
+  gap: 40px;
+}
 .addr-link {
   color: #434455;
   letter-spacing: 0.02em;
@@ -80,8 +107,14 @@ ul {
   color: #404bbf;
 }
 
-.hero-section {
+.hero-section .container {
   background: #2e2f42;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 48px;
 }
 
 .hero-title {
@@ -102,7 +135,7 @@ ul {
   background-color: #4d5ae5;
   cursor: pointer;
   border-radius: 4px;
-  padding: 16px 32px;
+
   width: 169px;
   height: 56px;
 }
@@ -116,19 +149,59 @@ ul {
   background-color: #404bbf;
 }
 
+.skill .container {
+  width: 1128px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 120px 0;
+  gap: 72px;
+}
+
+.skill-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+  color: #2e2f42;
+}
+.skill-list {
+  display: flex;
+  gap: 24px;
+}
 .skill-header {
   font-weight: 500;
   color: #2e2f42;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .skill-text {
   color: #434455;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
+  font-weight: 400;
+}
+
+.team-section .container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 120px 0;
+  background-color: #f4f4fd;
+  gap: 72px;
+}
+.team-list {
+  text-align: center;
+  gap: 24px;
+  display: flex;
+  justify-content: center;
 }
 
 .team-item {
@@ -154,23 +227,27 @@ ul {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 .our-team-title {
-  font-weight: 500;
-  color: #2e2f42;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
+  color: #2e2f42;
 }
 
-.team-list {
-  text-align: center;
-}
-
-.team-section {
-  background-color: #f4f4fd;
+.portfolio-section .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1128px;
+  margin: 0 auto;
+  padding: 120px 0;
 }
 
 .portfolio-title {
@@ -180,10 +257,13 @@ ul {
   text-transform: capitalize;
   text-align: center;
   color: #2e2f42;
+  flex-direction: column;
 }
 
 .portfolio-img {
   background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
 }
 
 .portfolio-header {
